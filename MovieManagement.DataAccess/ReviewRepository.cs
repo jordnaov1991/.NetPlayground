@@ -8,6 +8,7 @@ namespace MovieManagement.DataAccess
 {
     public class ReviewRepository : BaseRepository
     {
+        //adding access methods for application interaction with the DB - table Review.
         public List<Review> SearchReviews()
         {
             return dbContext.Reviews.ToList();

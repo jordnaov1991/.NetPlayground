@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieManagement.DataAccess
 {
+    //Base refactoring.
     public class BaseRepository
     {
         protected MoviesDBEntities dbContext = new MoviesDBEntities();

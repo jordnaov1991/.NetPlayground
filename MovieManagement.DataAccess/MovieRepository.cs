@@ -8,6 +8,7 @@ namespace MovieManagement.DataAccess
 {
     public class MovieRepository : BaseRepository
     {
+        //adding access methods for application interaction with the DB - table Movies.
         public List<Movy> SearchReviews()
         {
             return dbContext.Movies.ToList();

@@ -8,6 +8,7 @@ namespace MovieManagement.DataAccess
 {
     public class CategoryRepository : BaseRepository
     {
+        //adding access methods for application interaction with the DB - table Categories.
         public List<Category> SearchCategories()
         {
             return dbContext.Categories.ToList();
