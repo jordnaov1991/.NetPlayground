@@ -1,0 +1,6 @@
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataContracts\bin\Debug\MovieManagement.DataContracts.dll
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataContracts\bin\Debug\MovieManagement.DataContracts.pdb
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataContracts\obj\Debug\MovieManagement.DataContracts.csprojAssemblyReference.cache
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataContracts\obj\Debug\MovieManagement.DataContracts.csproj.CoreCompileInputs.cache
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataContracts\obj\Debug\MovieManagement.DataContracts.dll
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataContracts\obj\Debug\MovieManagement.DataContracts.pdb

@@ -1,0 +1,14 @@
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\bin\Debug\MovieManagement.DataAccess.dll
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\bin\Debug\MovieManagement.DataAccess.pdb
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\bin\Debug\MovieManagement.DataContracts.dll
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\bin\Debug\MovieManagement.DataContracts.pdb
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\obj\Debug\MovieManagement.DataAccess.csprojAssemblyReference.cache
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\obj\Debug\MovieManagement.DataAccess.csproj.CoreCompileInputs.cache
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\obj\Debug\MovieManagement.DataAccess.csproj.CopyComplete
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\obj\Debug\MovieManagement.DataAccess.dll
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\obj\Debug\MovieManagement.DataAccess.pdb
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\bin\Debug\MovieManagement.DataAccess.dll.config
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\bin\Debug\EntityFramework.dll
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\bin\Debug\EntityFramework.xml
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement.DataAccess\bin\Debug\EntityFramework.SqlServer.xml

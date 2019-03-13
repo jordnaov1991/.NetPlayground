@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MoviesDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="400" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'MoviesDB.dbo.MovieReviews' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MovieReviews">
+    <Key>
+      <PropertyRef Name="MovieId" />
+      <PropertyRef Name="ReviewID" />
+    </Key>
+    <Property Name="MovieId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ReviewID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Movies">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Title" Type="varbinary" MaxLength="400" Nullable="false" />
+    <Property Name="ReleaseDate" Type="int" Nullable="false" />
+    <Property Name="Length" Type="int" Nullable="false" />
+    <Property Name="Rating" Type="varchar" MaxLength="50" />
+    <Property Name="AverageScore" Type="float" />
+    <Property Name="CategoryID" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Reviews">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Score" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_MovieReviews_Movies">
+    <End Role="Movies" Type="Self.Movies" Multiplicity="1" />
+    <End Role="MovieReviews" Type="Self.MovieReviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movies">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MovieReviews">
+        <PropertyRef Name="MovieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MovieReviews_Reviews">
+    <End Role="Reviews" Type="Self.Reviews" Multiplicity="1" />
+    <End Role="MovieReviews" Type="Self.MovieReviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reviews">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MovieReviews">
+        <PropertyRef Name="ReviewID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movies_Categories">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
+    <End Role="Movies" Type="Self.Movies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Movies">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MoviesDBModelStoreContainer">
+    <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Movies" EntityType="Self.Movies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reviews" EntityType="Self.Reviews" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MovieReviews" EntityType="Self.MovieReviews" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MovieReviews].[MovieId] AS [MovieId], 
+    [MovieReviews].[ReviewID] AS [ReviewID]
+    FROM [dbo].[MovieReviews] AS [MovieReviews]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_MovieReviews_Movies" Association="Self.FK_MovieReviews_Movies">
+      <End Role="Movies" EntitySet="Movies" />
+      <End Role="MovieReviews" EntitySet="MovieReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MovieReviews_Reviews" Association="Self.FK_MovieReviews_Reviews">
+      <End Role="Reviews" EntitySet="Reviews" />
+      <End Role="MovieReviews" EntitySet="MovieReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movies_Categories" Association="Self.FK_Movies_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Movies" EntitySet="Movies" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
