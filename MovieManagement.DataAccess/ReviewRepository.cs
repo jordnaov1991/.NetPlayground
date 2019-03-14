@@ -13,6 +13,7 @@ namespace MovieManagement.DataAccess
         {
             return dbContext.Reviews.ToList();
         }
+
         public Review GetReview(Guid reviewId)
         {
             var review = dbContext.Reviews.FirstOrDefault(a => a.id == reviewId);

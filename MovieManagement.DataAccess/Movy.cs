@@ -21,8 +21,8 @@ namespace MovieManagement.DataAccess
         }
     
         public System.Guid id { get; set; }
-        public byte[] Title { get; set; }
-        public int ReleaseDate { get; set; }
+        public string Title { get; set; }
+        public System.DateTime ReleaseDate { get; set; }
         public int Length { get; set; }
         public string Rating { get; set; }
         public Nullable<double> AverageScore { get; set; }

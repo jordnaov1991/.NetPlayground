@@ -88,3 +88,8 @@ D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement\obj\Debug\Mo
 D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement\obj\Debug\MovieManagement.Web.csproj.CopyComplete
 D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement\obj\Debug\MovieManagement.dll
 D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement\obj\Debug\MovieManagement.pdb
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement\bin\MovieManagement.DataAccess.dll
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement\bin\EntityFramework.dll
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement\bin\MovieManagement.DataAccess.pdb
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement\bin\MovieManagement.DataAccess.dll.config
+D:\C#Projects\MovieManagementSystem\WebApplication1\MovieManagement\bin\EntityFramework.xml

@@ -10,7 +10,7 @@ namespace MovieManagement.DataContracts
     {
         public string Title { get; set; }
         public DateTime ReleaseDate { get; set; }
-        public int Lenght { get; set; }
+        public int Length { get; set; }
         public float AverageScore { get; set; }
         public string CategoryName { get; set; }
         public string Rating { get; set; }

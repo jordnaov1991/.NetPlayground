@@ -9,11 +9,11 @@ namespace MovieManagement.DataAccess
     public class MovieRepository : BaseRepository
     {
         //adding access methods for application interaction with the DB - table Movies.
-        public List<Movy> SearchReviews()
+        public List<Movy> SearchMovies()
         {
             return dbContext.Movies.ToList();
         }
-        public Movy GetReview(Guid movieId)
+        public Movy GetMovies(Guid movieId)
         {
             var movie = dbContext.Movies.FirstOrDefault(a => a.id == movieId);
             return movie;

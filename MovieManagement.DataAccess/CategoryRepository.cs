@@ -20,6 +20,17 @@ namespace MovieManagement.DataAccess
 
         }
 
+        public Category GetCategoryByName(string name)
+        {
+
+            //converting name to lowercase, to make sure it matches the Category string in table
+            var loweCaseName = name.ToLower();
+            var category = dbContext.Categories.FirstOrDefault(a => a.name.ToLower().Contains(loweCaseName));
+
+            return category;
+
+        }
+
         public void AddCategory(Category newCategory)
         {
             dbContext.Categories.Add(newCategory);

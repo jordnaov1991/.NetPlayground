@@ -13,8 +13,8 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Guid" Nullable="false" />
-    <Property Name="Title" Type="Binary" MaxLength="400" FixedLength="false" Nullable="false" />
-    <Property Name="ReleaseDate" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" />
+    <Property Name="ReleaseDate" Type="DateTime" Nullable="false" />
     <Property Name="Length" Type="Int32" Nullable="false" />
     <Property Name="Rating" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="AverageScore" Type="Double" />
